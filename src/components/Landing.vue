@@ -62,7 +62,7 @@ h2 {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 3em;
   font-weight: 900;
   margin: 0;
 }
@@ -75,5 +75,11 @@ p {
 #copyright {
   font-size: 0.85em;
   font-weight: 500;
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 5em;
+  }
 }
 </style>

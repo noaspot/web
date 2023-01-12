@@ -1,10 +1,18 @@
 <template>
   <div class="landing">
-    <h2>Noaspot</h2>
-    <h1>Coming Soon</h1>
-    <p>Add your email below to </p>
-    <p>be notified when we launch.</p>
-    <p id="copyright">© 2023 Noaspot LLC</p>
+    <div class="header">
+      <h2>Noaspot</h2>
+    </div>
+    <div class="content">
+      <h1>Coming Soon</h1>
+      <p>Come back soon to download our iOS app</p>
+      <p>or send us an
+      <a href="mailto:support@noaspot.com">email</a>
+      for more information.</p>
+    </div>
+    <div class="footer">
+      <p id="copyright">© 2023 Noaspot LLC</p>
+    </div>
   </div>
 </template>
 
@@ -19,6 +27,36 @@ export default {
   color: #FFF;
 }
 
+.header {
+  height: 10%;
+}
+
+.content {
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a {
+  color: #111;;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
 h2 {
   letter-spacing: 2px;
 }
@@ -26,15 +64,16 @@ h2 {
 h1 {
   font-size: 5em;
   font-weight: 900;
+  margin: 0;
 }
 
 p {
-  margin: 5px;
+  margin: 10px;
   font-weight: 600;
 }
 
 #copyright {
   font-size: 0.85em;
-  font-weight: 400;
+  font-weight: 500;
 }
 </style>
